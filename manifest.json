@@ -1,0 +1,11 @@
+
+{
+  "name": "የወጪ መከታተያ",
+  "short_name": "ወጪ",
+  "start_url": "/Expense-/",
+  "scope": "/Expense-/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1e40af",
+  "description": "የግል ወጪ መከታተያ"
+}
