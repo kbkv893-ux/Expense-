@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>አዶ መስሪያ</title>
+</head>
+<body>
+<h2>አዶ መስሪያ</h2>
+<p><a id="a192" download="icon-192.png">icon-192 አውርድ</a></p>
+<p><a id="a512" download="icon-512.png">icon-512 አውርድ</a></p>
+
+<script>
+function make(size) {
+  var c = document.createElement("canvas");
+  c.width = size;
+  c.height = size;
+  var x = c.getContext("2d");
+  x.fillStyle = "#1e40af";
+  x.fillRect(0, 0, size, size);
+  x.fillStyle = "#ffffff";
+  x.font = "bold " + (size * 0.5) + "px Arial";
+  x.textAlign = "center";
+  x.textBaseline = "middle";
+  x.fillText("ብር", size / 2, size / 2);
+  return c.toDataURL("image/png");
+}
+document.getElementById("a192").href = make(192);
+document.getElementById("a512").href = make(512);
+</script>
+</body>
+</html>
