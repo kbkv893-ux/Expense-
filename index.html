@@ -1,19 +1,31 @@
-<h1>የወጪ መከታተያ</h1>
-<input id="ስም" type="text" placeholder="ወጪው ምንድን ነው?">
-<input id="መጠን" type="number" placeholder="ብር">
-<button id="ጨምር">ጨምር</button>
-<h2>ጠቅላላ: <span id="ድምር">0</span> ብር</h2>
+<!DOCTYPE html>
+<html lang="am">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1e40af">
+  <title>የወጪ መከታተያ</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icon-192.png">
+  <link rel="apple-touch-icon" href="icon-192.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>የወጪ መከታተያ</h1>
 
-<ul id="ዝርዝር"></ul>
+  <input id="ስም" type="text" placeholder="ወጪው ምንድን ነው?">
+  <input id="መጠን" type="number" placeholder="ብር">
+  <button id="ጨምር">ጨምር</button>
 
-<script src="script.js"></script>
-<link rel="stylesheet" href="style.css">
+  <h2>ጠቅላላ: <span id="ድምር">0</span> ብር</h2>
 
-<ul id="ዝርዝር"></ul>
+  <ul id="ዝርዝር"></ul>
 
-<script src="script.js"></script>
-<script>
-if ("serviceWorker" in navigator) {
-  navigator.serviceWorker.register("sw.js");
-}
-</script>
+  <script src="script.js"></script>
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("sw.js");
+    }
+  </script>
+</body>
+</html>
